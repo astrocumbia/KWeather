@@ -1,6 +1,6 @@
 package me.irvincastellanos.kweather
 
-import me.irvincastellanos.kweather.models.ApiClient
+import me.irvincastellanos.kweather.network.ApiClient
 import org.junit.Test
 
 import org.junit.Assert.*

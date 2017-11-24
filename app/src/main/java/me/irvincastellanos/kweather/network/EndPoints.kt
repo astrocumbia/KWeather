@@ -1,8 +1,7 @@
 package me.irvincastellanos.kweather.network
 
-import me.irvincastellanos.kweather.models.Weather
+import me.irvincastellanos.kweather.models.WeatherRsp
 import retrofit2.Call
-import org.json.JSONObject
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -16,5 +15,5 @@ interface EndPoints {
     @GET("weather")
     fun weatherByZipCode(@Query("zip") zipcode: String,
                          @Query("appid") key: String = KEY)
-            :Call<JSONObject>
+            :Call<WeatherRsp>
 }
